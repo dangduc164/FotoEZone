@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+// ----------------------------------------------------------------------
+// MediaQuery
+// ----------------------------------------------------------------------
+
+
+@mixin brSmallPc {
+	// Small PC <= 1279px
+	@media ( max-width: ($width-small-pc + $width-scrollbar)) {
+		@content;
+	}
+}
+
+
+@mixin brTablet {
+	// Tablet <= 1199px
+	@media ( max-width: ($width-tablet + $width-scrollbar)) {
+		@content;
+	}
+}
+
+
+@mixin brSpLandscape {
+	// SP Landscape <= 767px
+	@media  ( max-width: ($width-sp-landscape + $width-scrollbar)) {
+		@content;
+	}
+}
+
+
+@mixin brSpPortrait {
+	// SP Portrait <= 575px
+	@media ( max-width: ($width-sp-portrait + $width-scrollbar)) {
+		@content;
+	}
+}

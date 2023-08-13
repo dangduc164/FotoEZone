@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base Bootstrap</title>
+
+    <!--animate-->
+    <link rel="stylesheet" href="./assets/css/animate.min.css">
+    <link rel="stylesheet" href="./assets/css/aos.css">
+    <!--end animate-->
+
+    <!--bootstrap5-->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/jquery-ui.min.css">
+    <!--end bootstrap5-->
+
+    <!---slick slider-->
+    <link rel="stylesheet" href="./assets/css/slick.css">
+    <!--end slick slider-->
+
+    <!-- style -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.min.css">
+    <!--end style-->
+</head>
+
+<body>
+
+    <header class="l-header">
+        <div class="l-heaer__logo">
+            <a href="/"><img src="./assets/img/common/logo.png" alt="logo"></a>
+        </div>
+        <div class="l-heaer__nava">
+            <ul>
+                <li class="menu-item">
+                    <a href="/">Home</a>
+                </li>
+                <li class="menu-item">
+                    <a href="/about/">Abouts</a>
+                </li>
+                <li class="menu-item has-sub">
+                    <a href="#">services</a>
+                    <ul class="sub_menu">
+                        <li class="menu-item">
+                            <a href="#">Photo editting</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">Day to dusk</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">Item Removal</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">Floor Plan (2D&3D)</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">Virtual Staging</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/video/">Video</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="/portfolio/">Portfolio</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#"></a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div id="outer-wrap" class="site clr">
+            <a class="skip-link screen-reader-text" href="#main">Skip to content</a>
+            <div id="wrap" class="clr">
+                <div id="transparent-header-wrap" class="clr">
+                    <!-- <header id="site-header" class="transparent-header effect-one clr fixed-scroll shrink-header" data-height="54" itemscope="itemscope" itemtype="https://schema.org/WPHeader" role="banner">
+                        <div id="site-header-inner" class="clr container">
+                            <div id="site-logo" class="clr has-sticky-logo" itemscope itemtype="https://schema.org/Brand">
+                                <div id="site-logo-inner" class="clr">
+                                    <a href="https://gatorsphotos.com/" class="custom-logo-link" rel="home" aria-current="page">
+                                        <img width="249" height="215" src="https://gatorsphotos.com/wp-content/uploads/2022/02/Asset-2ldpi.png" class="custom-logo" alt="GatorsPhotos | Real Estate Photo Editing" decoding="async" fetchpriority="high" srcset="" />
+                                    </a>
+                                    <a href="https://gatorsphotos.com/" class="sticky-logo-link" rel="home" itemprop="url">
+                                        <img src="https://gatorsphotos.com/wp-content/uploads/2022/02/Asset-1ldpi.png" class="sticky-logo" width="249" height="215" alt="GatorsPhotos | Real Estate Photo Editing" itemprop="url" srcset="https://gatorsphotos.com/wp-content/uploads/2022/02/Asset-1ldpi.png 1x, https://gatorsphotos.com/wp-content/uploads/2022/02/Asset-1mdpi.png 2x"
+                                        />
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div id="site-navigation-wrap" class="clr">
+                                <nav id="site-navigation" class="navigation main-navigation clr" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement" role="navigation">
+
+                                    <ul id="menu-main-menu" class="main-menu dropdown-menu sf-menu">
+                                        <li id="menu-item-1386" class="menu-item current-menu-item"><a href="https://gatorsphotos.com/" class="menu-link"><span class="text-wrap">Home</span></a></li>
+                                        <li id="menu-item-1385" class="menu-item"><a href="https://gatorsphotos.com/about-us/" class="menu-link"><span class="text-wrap">About Us</span></a></li>
+                                        <li id="menu-item-1382" class="menu-item"><a href="https://gatorsphotos.com/gallery/" class="menu-link"><span class="text-wrap">Gallery</span></a></li>
+                                        <li id="menu-item-1499" class="menu-item"><a href="#pricing" class="menu-link"><span class="text-wrap">Pricing</span></a></li>
+                                        <li id="menu-item-1383" class="menu-item"><a href="https://gatorsphotos.com/blog/" class="menu-link"><span class="text-wrap">News</span></a></li>
+                                        <li id="menu-item-1387" class="menu-item"><a href="https://gatorsphotos.com/contact/" class="menu-link"><span class="text-wrap">Contact Info</span></a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+
+                            <div class="oceanwp-mobile-menu-icon clr mobile-right">
+                                <a href="#" class="mobile-menu" aria-label="Mobile Menu">
+                                    <div class="hamburger hamburger--spin" aria-expanded="false">
+                                        <div class="hamburger-box">
+                                            <div class="hamburger-inner"></div>
+                                        </div>
+                                    </div>
+                                    <span class="oceanwp-text">Menu</span>
+                                    <span class="oceanwp-close-text">Close</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div id="mobile-dropdown" class="clr">
+                            <nav class="clr" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement">
+                                <ul id="menu-main-menu-1" class="menu">
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-355 current_page_item menu-item-1386"><a href="https://gatorsphotos.com/" aria-current="page">Home</a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1385"><a href="https://gatorsphotos.com/about-us/">About Us</a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1382"><a href="https://gatorsphotos.com/gallery/">Gallery</a></li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1499"><a href="#pricing">Pricing</a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1383"><a href="https://gatorsphotos.com/blog/">News</a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1387"><a href="https://gatorsphotos.com/contact/">Contact Info</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </header> -->
+                </div>
+
+                <main id="main" class="site-main clr" role="main">
+                    <div id="content-wrap" class="container clr">
+                        <div id="primary" class="content-area clr">
+                            <div id="content" class="site-content clr">
+                                <article class="single-page-article clr">
+                                    <div class="entry clr" itemprop="text"></div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+
+                <footer id="footer" class="site-footer" itemscope="itemscope" itemtype="https://schema.org/WPFooter" role="contentinfo">
+                    <div id="footer-inner" class="clr">
+                        <div id="footer-widgets" class="oceanwp-row clr">
+                            <div class="footer-widgets-inner container">
+                                <div data-elementor-type="wp-post" data-elementor-id="1334" class="elementor elementor-1334" data-elementor-settings="[]">
+                                    <div class="elementor-section-wrap">
+                                        <section class="elementor-section elementor-top-section elementor-element elementor-element-9692df9 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="9692df9" data-element_type="section">
+                                            <div class="elementor-container elementor-column-gap-default">
+                                                <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-8e33f17" data-id="8e33f17" data-element_type="column">
+                                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                                        <div class="elementor-element elementor-element-5c93ecf elementor-widget elementor-widget-image" data-id="5c93ecf" data-element_type="widget" data-widget_type="image.default">
+                                                            <div class="elementor-widget-container">
+                                                                <a href="https://gatorsphotos.com/">
+                                                                    <img src="https://gatorsphotos.com/wp-content/uploads/2022/02/Asset-1mdpi.png" title="Asset 1mdpi" alt="Asset 1mdpi" /> </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-c75f03f" data-id="c75f03f" data-element_type="column">
+                                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                                        <div class="elementor-element elementor-element-616512e elementor-align-right elementor-widget elementor-widget-oew-advanced-heading" data-id="616512e" data-element_type="widget" data-widget_type="oew-advanced-heading.default">
+                                                            <div class="elementor-widget-container">
+
+                                                                <div class="oew-advanced-heading">
+
+                                                                    <h4 class="oew-main-heading">
+                                                                        <div>
+                                                                            Quick Links
+                                                                        </div>
+                                                                    </h4>
+
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="elementor-element elementor-element-fff264b elementor-widget elementor-widget-heading" data-id="fff264b" data-element_type="widget" data-widget_type="heading.default">
+                                                            <div class="elementor-widget-container">
+                                                                <p class="elementor-heading-title elementor-size-default"><a href="https://gatorsphotos.com/about-us/">About us</a></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="elementor-element elementor-element-56c8eb9 elementor-widget elementor-widget-heading" data-id="56c8eb9" data-element_type="widget" data-widget_type="heading.default">
+                                                            <div class="elementor-widget-container">
+                                                                <p class="elementor-heading-title elementor-size-default"><a href="https://gatorsphotos.com/contact/">Contacts</a></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="elementor-element elementor-element-82e88e7 elementor-widget elementor-widget-heading" data-id="82e88e7" data-element_type="widget" data-widget_type="heading.default">
+                                                            <div class="elementor-widget-container">
+                                                                <p class="elementor-heading-title elementor-size-default"><a href="https://gatorsphotos.com/pricing/">Pricing</a></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-08b3c82" data-id="08b3c82" data-element_type="column">
+                                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                                        <div class="elementor-element elementor-element-3b2861d elementor-align-right elementor-widget elementor-widget-oew-advanced-heading" data-id="3b2861d" data-element_type="widget" data-widget_type="oew-advanced-heading.default">
+                                                            <div class="elementor-widget-container">
+
+                                                                <div class="oew-advanced-heading">
+
+                                                                    <h4 class="oew-main-heading">
+                                                                        <div>
+                                                                            Policies
+                                                                        </div>
+                                                                    </h4>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="elementor-element elementor-element-46fdb1c elementor-widget elementor-widget-heading" data-id="46fdb1c" data-element_type="widget" data-widget_type="heading.default">
+                                                            <div class="elementor-widget-container">
+                                                                <p class="elementor-heading-title elementor-size-default"><a href="https://gatorsphotos.com/">Privacy Policy</a></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="elementor-element elementor-element-47595df elementor-widget elementor-widget-heading" data-id="47595df" data-element_type="widget" data-widget_type="heading.default">
+                                                            <div class="elementor-widget-container">
+                                                                <p class="elementor-heading-title elementor-size-default"><a href="https://gatorsphotos.com/">Delivery Policy</a></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="elementor-element elementor-element-51c02e3 elementor-widget elementor-widget-heading" data-id="51c02e3" data-element_type="widget" data-widget_type="heading.default">
+                                                            <div class="elementor-widget-container">
+                                                                <p class="elementor-heading-title elementor-size-default"><a href="https://gatorsphotos.com/">Payment policy</a></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-057b250" data-id="057b250" data-element_type="column">
+                                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                                        <div class="elementor-element elementor-element-1ef9245 elementor-shape-circle e-grid-align-right elementor-grid-0 elementor-widget elementor-widget-social-icons" data-id="1ef9245" data-element_type="widget" data-widget_type="social-icons.default">
+                                                            <div class="elementor-widget-container">
+                                                                <style>
+                                                                    /*! elementor - v3.5.5 - 03-02-2022 */
+                                                                    
+                                                                    .elementor-widget-social-icons.elementor-grid-0 .elementor-widget-container,
+                                                                    .elementor-widget-social-icons.elementor-grid-mobile-0 .elementor-widget-container,
+                                                                    .elementor-widget-social-icons.elementor-grid-tablet-0 .elementor-widget-container {
+                                                                        line-height: 1;
+                                                                        font-size: 0
+                                                                    }
+                                                                    
+                                                                    .elementor-widget-social-icons:not(.elementor-grid-0):not(.elementor-grid-tablet-0):not(.elementor-grid-mobile-0) .elementor-grid {
+                                                                        display: inline-grid
+                                                                    }
+                                                                    
+                                                                    .elementor-widget-social-icons .elementor-grid {
+                                                                        grid-column-gap: var(--grid-column-gap, 5px);
+                                                                        grid-row-gap: var(--grid-row-gap, 5px);
+                                                                        grid-template-columns: var(--grid-template-columns);
+                                                                        -webkit-box-pack: var(--justify-content, center);
+                                                                        -ms-flex-pack: var(--justify-content, center);
+                                                                        justify-content: var(--justify-content, center);
+                                                                        justify-items: var(--justify-content, center)
+                                                                    }
+                                                                    
+                                                                    .elementor-icon.elementor-social-icon {
+                                                                        font-size: var(--icon-size, 25px);
+                                                                        line-height: var(--icon-size, 25px);
+                                                                        width: calc(var(--icon-size, 25px) + (2 * var(--icon-padding, .5em)));
+                                                                        height: calc(var(--icon-size, 25px) + (2 * var(--icon-padding, .5em)))
+                                                                    }
+                                                                    
+                                                                    .elementor-social-icon {
+                                                                        --e-social-icon-icon-color: #fff;
+                                                                        display: -webkit-inline-box;
+                                                                        display: -ms-inline-flexbox;
+                                                                        display: inline-flex;
+                                                                        background-color: #818a91;
+                                                                        -webkit-box-align: center;
+                                                                        -ms-flex-align: center;
+                                                                        align-items: center;
+                                                                        -webkit-box-pack: center;
+                                                                        -ms-flex-pack: center;
+                                                                        justify-content: center;
+                                                                        text-align: center;
+                                                                        cursor: pointer
+                                                                    }
+                                                                    
+                                                                    .elementor-social-icon i {
+                                                                        color: var(--e-social-icon-icon-color)
+                                                                    }
+                                                                    
+                                                                    .elementor-social-icon svg {
+                                                                        fill: var(--e-social-icon-icon-color)
+                                                                    }
+                                                                    
+                                                                    .elementor-social-icon:last-child {
+                                                                        margin: 0
+                                                                    }
+                                                                    
+                                                                    .elementor-social-icon:hover {
+                                                                        opacity: .9;
+                                                                        color: #fff
+                                                                    }
+                                                                    
+                                                                    .elementor-social-icon-android {
+                                                                        background-color: #a4c639
+                                                                    }
+                                                                    
+                                                                    .elementor-social-icon-apple {
+                                                                        background-color: #999
+                                                                    }
+                                                                    
+                                                                    .elementor-social-icon-behance {
+                                                                        background-color: #1769ff
+                                                                    }
+                                                                    
+                                                                    .elementor-social-icon-bitbucket {
+                                                                        background-color: #205081
+                                                                    }
+                                                                    
+                                                                    .elementor-social-icon-codepen {
+                                                                        background-color: #000
+                                                                    }
+                                                                    
+                                                                    .elementor-social-icon-delicious {
+                                                                        background-color: #39f
+                                                                    }
+                                                                    
+                                                                    .elementor-social-icon-deviantart {
+                                                                        background-color: #05cc47
+                                                                    }
+                                                                    
+                                                                    .elementor-social-icon-digg {
+                                                                        background-color: #005be2
+                                                                    }
+                                                                    
+                                                                    .elementor-social-icon-dribbble {
+                                                                        background-color: #ea4c89
+                                                                    }
+                                                                    
+                                                                    .elementor-social-icon-elementor {
+                                                                        background-color: #d30c5c
+                                                                    }
+                                                                    
+                                                                    .elementor-social-icon-envelope {
+                                                                        background-color: #ea4335
+                                                                    }
+                                                                    
+                                                                    .elementor-social-icon-facebook,
+                                                                    .elementor-social-icon-facebook-f {
+                                                                        background-color: #3b5998
+                                                                    }
+                                                                    
+                                                                    .elementor-social-icon-flickr {
+                                                                        background-color: #0063dc
+                                                                    }
+                                                                    
+                                                                    .elementor-social-icon-foursquare {
+                                                                        background-color: #2d5be3
+                                                                    }
+                                                                    
+                                                                    .elementor-social-icon-free-code-camp,
+                                                                    .elementor-social-icon-freecodecamp {
+                                                                        background-color: #006400
+                                                                    }
+                                                                    
+                                                                    .elementor-social-icon-github {
+                                                                        background-color: #333
+                                                                    }
+                                                                    
+                                                                    .elementor-social-icon-gitlab {
+                                                                        background-color: #e24329
+                                                                    }
+                                                                    
+                                                                    .elementor-social-icon-globe {
+                                                                        background-color: #818a91
+                                                                    }
+                                                                    
+                                                                    .elementor-social-icon-google-plus,
+                                                                    .elementor-social-icon-google-plus-g {
+                                                                        background-color: #dd4b39
+                                                                    }
+                                                                    
+                                                                    .elementor-social-icon-houzz {
+                                                                        background-color: #7ac142
+                                                                    }
+                                                                    
+                                                                    .elementor-social-icon-instagram {
+                                                                        background-color: #262626
+                                                                    }
+                                                                    
+                                                                    .elementor-social-icon-jsfiddle {
+                                                                        background-color: #487aa2
+                                                                    }
+                                                                    
+                                                                    .elementor-social-icon-link {
+                                                                        background-color: #818a91
+                                                                    }
+                                                                    
+                                                                    .elementor-social-icon-linkedin,
+                                                                    .elementor-social-icon-linkedin-in {
+                                                                        background-color: #0077b5
+                                                                    }
+                                                                    
+                                                                    .elementor-social-icon-medium {
+                                                                        background-color: #00ab6b
+                                                                    }
+                                                                    
+                                                                    .elementor-social-icon-meetup {
+                                                                        background-color: #ec1c40
+                                                                    }
+                                                                    
+                                                                    .elementor-social-icon-mixcloud {
+                                                                        background-color: #273a4b
+                                                                    }
+                                                                    
+                                                                    .elementor-social-icon-odnoklassniki {
+                                                                        background-color: #f4731c
+                                                                    }
+                                                                    
+                                                                    .elementor-social-icon-pinterest {
+                                                                        background-color: #bd081c
+                                                                    }
+                                                                    
+                                                                    .elementor-social-icon-product-hunt {
+                                                                        background-color: #da552f
+                                                                    }
+                                                                    
+                                                                    .elementor-social-icon-reddit {
+                                                                        background-color: #ff4500
+                                                                    }
+                                                                    
+                                                                    .elementor-social-icon-rss {
+                                                                        background-color: #f26522
+                                                                    }
+                                                                    
+                                                                    .elementor-social-icon-shopping-cart {
+                                                                        background-color: #4caf50
+                                                                    }
+                                                                    
+                                                                    .elementor-social-icon-skype {
+                                                                        background-color: #00aff0
+                                                                    }
+                                                                    
+                                                                    .elementor-social-icon-slideshare {
+                                                                        background-color: #0077b5
+                                                                    }
+                                                                    
+                                                                    .elementor-social-icon-snapchat {
+                                                                        background-color: #fffc00
+                                                                    }
+                                                                    
+                                                                    .elementor-social-icon-soundcloud {
+                                                                        background-color: #f80
+                                                                    }
+                                                                    
+                                                                    .elementor-social-icon-spotify {
+                                                                        background-color: #2ebd59
+                                                                    }
+                                                                    
+                                                                    .elementor-social-icon-stack-overflow {
+                                                                        background-color: #fe7a15
+                                                                    }
+                                                                    
+                                                                    .elementor-social-icon-steam {
+                                                                        background-color: #00adee
+                                                                    }
+                                                                    
+                                                                    .elementor-social-icon-stumbleupon {
+                                                                        background-color: #eb4924
+                                                                    }
+                                                                    
+                                                                    .elementor-social-icon-telegram {
+                                                                        background-color: #2ca5e0
+                                                                    }
+                                                                    
+                                                                    .elementor-social-icon-thumb-tack {
+                                                                        background-color: #1aa1d8
+                                                                    }
+                                                                    
+                                                                    .elementor-social-icon-tripadvisor {
+                                                                        background-color: #589442
+                                                                    }
+                                                                    
+                                                                    .elementor-social-icon-tumblr {
+                                                                        background-color: #35465c
+                                                                    }
+                                                                    
+                                                                    .elementor-social-icon-twitch {
+                                                                        background-color: #6441a5
+                                                                    }
+                                                                    
+                                                                    .elementor-social-icon-twitter {
+                                                                        background-color: #1da1f2
+                                                                    }
+                                                                    
+                                                                    .elementor-social-icon-viber {
+                                                                        background-color: #665cac
+                                                                    }
+                                                                    
+                                                                    .elementor-social-icon-vimeo {
+                                                                        background-color: #1ab7ea
+                                                                    }
+                                                                    
+                                                                    .elementor-social-icon-vk {
+                                                                        background-color: #45668e
+                                                                    }
+                                                                    
+                                                                    .elementor-social-icon-weibo {
+                                                                        background-color: #dd2430
+                                                                    }
+                                                                    
+                                                                    .elementor-social-icon-weixin {
+                                                                        background-color: #31a918
+                                                                    }
+                                                                    
+                                                                    .elementor-social-icon-whatsapp {
+                                                                        background-color: #25d366
+                                                                    }
+                                                                    
+                                                                    .elementor-social-icon-wordpress {
+                                                                        background-color: #21759b
+                                                                    }
+                                                                    
+                                                                    .elementor-social-icon-xing {
+                                                                        background-color: #026466
+                                                                    }
+                                                                    
+                                                                    .elementor-social-icon-yelp {
+                                                                        background-color: #af0606
+                                                                    }
+                                                                    
+                                                                    .elementor-social-icon-youtube {
+                                                                        background-color: #cd201f
+                                                                    }
+                                                                    
+                                                                    .elementor-social-icon-500px {
+                                                                        background-color: #0099e5
+                                                                    }
+                                                                    
+                                                                    .elementor-shape-rounded .elementor-icon.elementor-social-icon {
+                                                                        -webkit-border-radius: 10%;
+                                                                        border-radius: 10%
+                                                                    }
+                                                                    
+                                                                    .elementor-shape-circle .elementor-icon.elementor-social-icon {
+                                                                        -webkit-border-radius: 50%;
+                                                                        border-radius: 50%
+                                                                    }
+                                                                </style>
+                                                                <div class="elementor-social-icons-wrapper elementor-grid">
+                                                                    <span class="elementor-grid-item">
+                        <a class="elementor-icon elementor-social-icon elementor-social-icon-facebook elementor-repeater-item-9f41156" href="https://www.facebook.com/Gators-Photos-106852341936331/" target="_blank">
+                            <span class="elementor-screen-only">Facebook</span>
+                                                                    <i class="fab fa-facebook"></i> </a>
+                                                                    </span>
+                                                                    <span class="elementor-grid-item">
+                        <a class="elementor-icon elementor-social-icon elementor-social-icon-skype elementor-repeater-item-0c05e7d" href="https://join.skype.com/invite/wEocQHYgJSt9" target="_blank">
+                            <span class="elementor-screen-only">Skype</span>
+                                                                    <i class="fab fa-skype"></i> </a>
+                                                                    </span>
+                                                                    <span class="elementor-grid-item">
+                        <a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-repeater-item-c4283aa" href="https://www.instagram.com/tran_tylergp" target="_blank">
+                            <span class="elementor-screen-only">Instagram</span>
+                                                                    <i class="fab fa-instagram"></i> </a>
+                                                                    </span>
+                                                                    <span class="elementor-grid-item">
+                        <a class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-d2b2e3b" href="https://www.youtube.com/channel/UCnwajGFqwmGuwyrYb08Q5jg" target="_blank">
+                            <span class="elementor-screen-only">Youtube</span>
+                                                                    <i class="fab fa-youtube"></i> </a>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="elementor-element elementor-element-a8121ad elementor-widget elementor-widget-heading" data-id="a8121ad" data-element_type="widget" data-widget_type="heading.default">
+                                                            <div class="elementor-widget-container">
+                                                                <p class="elementor-heading-title elementor-size-default"><a href="mailto:gatorsphotosre@gmail.com">Email: gatorsphotosre@gmail.com</a></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- .container -->
+
+
+                        </div>
+                        <!-- #footer-widgets -->
+
+
+
+                        <div id="footer-bottom" class="clr no-footer-nav">
+
+
+                            <div id="footer-bottom-inner" class="container clr">
+
+
+
+                                <div id="copyright" class="clr" role="contentinfo">
+                                    Copyright<i class="fa fa-copyright" style="margin: 0 3px"></i>2022 All rights reserved by <a href="https://gatorsphotos.com" target="_blank">GatorsPhotos</a> </div>
+                                <!-- #copyright -->
+
+
+                            </div>
+                            <!-- #footer-bottom-inner -->
+
+
+                        </div>
+                        <!-- #footer-bottom -->
+
+
+                    </div>
+                    <!-- #footer-inner -->
+
+
+                </footer>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <footer></footer>
+
+
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/jquery.easing.min.js"></script>
+    <script src="./assets/js/jquery-ui.min.js"></script>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <script src="./assets/js/common.js"></script>
+</body>
+
+</html>

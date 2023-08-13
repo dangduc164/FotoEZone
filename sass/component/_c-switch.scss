@@ -1,0 +1,45 @@
+.c-switch-one {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 38px;
+    height: 16px;
+    input {
+        opacity: 1;
+        width: 0;
+        height: 0;
+        &:checked {
+            +.c-switch-one-slider {
+                background-color: #852988;
+                &::before {
+                    transform: translateX(21px);
+                    left: 0;
+                }
+            }
+        }
+    }
+    &-slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0px;
+        background: #D9D9D9;
+        transition: .4s all;
+        border-radius: 8px;
+        &:before {
+            position: absolute;
+            content: "";
+            width: 24.71px;
+            height: 24.71px;
+            border-radius: 16px;
+            left: -5px;
+            top: -4px;
+            bottom: 0;
+            background-color: white;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+            transition: .4s all;
+        }
+    }
+}

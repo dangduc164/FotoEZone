@@ -1,0 +1,190 @@
+@charset "utf-8";
+// import font
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@font-face {
+    font-family: "";
+    src: url("");
+}
+
+// ============================================================
+// 設定
+// ============================================================
+// HTML5の場合は「true」
+$html5: true;
+// compass ブラウザサポート
+$legacy-support-for-ie6: true;
+$legacy-support-for-ie7: true;
+$experimental-support-for-webkit: true;
+$experimental-support-for-mozilla: true;
+$experimental-support-for-opera: true;
+$experimental-support-for-microsoft: true;
+$experimental-support-for-khtml: false;
+//ie9用 svg
+$experimental-support-for-svg: true;
+// 画像パス
+$imgPath: "../images/";
+// commonフォルダ内の画像のパス
+$commonImgPath: "../common/images/";
+// ページの全体の横幅
+$baseWidth: 1000px;
+// 標準font-family 
+$font-family: 'Roboto',
+sans-serif;
+// 標準行間
+$lineHeight: 100%;
+$lineHeightText:1.6;
+$lineHeightText2:1.8;
+// カラー
+$cBase:#219181;
+$cAccent:#4EAF48;
+// 標準テキストカラー
+$textColor: #000;
+// 標準リンクカラー
+$linkColor: $cBase;
+$linkColor_visit: #cc9999;
+$linkColor_active: #cc9999;
+$linkColor_hover: #cc9999;
+// ============================================================
+// common
+// ============================================================
+html {
+    overflow-x: hidden;
+}
+
+body {
+    color: $textColor;
+    font-family: $font-family;
+    font-feature-settings: "halt" 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    background-color: #F7F9FB;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    transition: all .2s ease;
+    display: inline-block;
+    &:hover {
+        opacity: .6;
+        text-decoration: none;
+    }
+}
+
+img {
+    vertical-align: bottom;
+}
+
+img {
+    height: auto;
+}
+
+table {
+    width: 100%;
+}
+
+input,
+button {
+    font-family: inherit;
+    &:focus-visible {
+        outline: none;
+        box-shadow: none;
+    }
+}
+
+button,
+select {
+    cursor: pointer;
+    &:focus-visible {
+        outline: none;
+    }
+}
+
+input {
+    appearance: none;
+}
+
+a:focus,
+input:focus,
+textarea:focus-visible {
+    outline: none;
+}
+
+.text-underline {
+    text-decoration: underline;
+}
+
+.c-blue {
+    color: #4263EB !important;
+}
+
+.c-red {
+    color: #FF0500 !important;
+}
+
+.c-grey {
+    color: #DCDCDC !important;
+}
+
+.c-switch {
+    .toggle {
+        border-radius: 6.5px;
+        width: 29px !important;
+        height: 13px !important;
+        min-width: auto;
+        min-height: auto;
+        overflow: visible;
+        background: $cBase;
+        border-color: $cBase;
+        &.off {
+            background: #D9D9D9;
+            border-color: #D9D9D9;
+            .toggle-on {
+                display: none;
+            }
+            .toggle-handle {
+                bottom: 6px;
+            }
+        }
+        label {
+            font-size: 0;
+            transition: none !important;
+            left: 50% !important;
+            right: auto !important;
+            background-color: transparent;
+        }
+        .toggle-handle {
+            bottom: 5px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #FFFFFF;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+        }
+    }
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.item-sp {
+    display: none !important;
+    @include brSpLandscape {
+        display: block !important;
+    }
+}
+
+.item-pc {
+    @include brSpLandscape {
+        display: none !important;
+    }
+}

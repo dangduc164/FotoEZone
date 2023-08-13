@@ -1,0 +1,54 @@
+.c-big-banner {
+    position: relative;
+    margin-top: -115px;
+    @include brTablet {
+        margin-top: 0;
+    }
+    &__image {}
+    &__inner {}
+    &__content {
+        position: absolute;
+        left: 50%;
+        top: calc(50% - 128px);
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 891px;
+        max-width: 100%;
+        padding-left: 36px;
+        padding-right: 36px;
+        @media (max-width: 1499px) {
+            top: calc(50% - 50px);
+        }
+        @include brTablet {
+            top: calc(50% - 50px);
+        }
+        @include brSpLandscape {
+            top: calc(50% - 164px);
+        }
+        h3 {
+            font-family: 'UTM Bebas';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 64px;
+            line-height: 80px;
+            text-transform: uppercase;
+            color: #FDFDFD;
+            @include brTablet {
+                font-size: 32px;
+                line-height: 48px;
+            }
+        }
+        p {
+            margin-top: 49px;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 32px;
+            color: #FFFFFF;
+            @include brTablet {
+                font-size: 20px;
+                line-height: 32px;
+                margin-top: 24px;
+            }
+        }
+    }
+}
