@@ -328,6 +328,7 @@ input, textarea {
   left: 0;
   width: 100%;
   background: #fff;
+  z-index: 100;
 }
 .l-header__inner {
   display: -webkit-box;
